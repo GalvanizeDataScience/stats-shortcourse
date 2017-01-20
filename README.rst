@@ -1,16 +1,18 @@
 Statistics short-course
 ==========================
 
-As part of the admissions process for the Galvanize immersive program
-in data science there are two interviews: Python and statistics.
-These materials survey the areas of probability and statistics that
-will be covered in the statistics interview.  In addition to the
-overview there are resources for further study that are meant to
-reinforce the most important topics.
+As part of the admissions process for the `Galvanize immersive program
+in data science <http://www.galvanize.com/courses/data-science/>`_
+there are two interviews: Python and statistics.  These materials
+survey the areas of probability and statistics that will be covered in
+the statistics interview.  In addition to the overview there are
+resources for further study that are meant to reinforce the most
+important topics.
 
 The main topics to be covered will be as follows:
 
    **Day 1**: Probability, Probability distributions, Bayesian and frequentist paradigms
+
    **Day 2**: Random variables, statistical inference, regression, classification, evaluation metrics  
 
 We well begin in the first day with a gentle introduction to
