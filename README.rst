@@ -13,7 +13,7 @@ The main topics to be covered will be as follows:
 
    **Day 1**: Probability, Probability distributions, Bayesian and frequentist paradigms
 
-   **Day 2**: Random variables, statistical inference, regression, classification, evaluation metrics  
+   **Day 2**: Random variables, Statistical inference, Regression, Classification, Evaluation metrics  
 
 We well begin in the first day with a gentle introduction to
 probability and the major distributions used in statistics. We will
