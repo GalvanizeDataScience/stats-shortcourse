@@ -1,6 +1,10 @@
 Statistics short-course
 ==========================
 
+**This repository has been moved**
+
+https://github.com/GalvanizeOpenSource/stats-shortcourse
+
 As part of the admissions process for the `Galvanize immersive program
 in data science <http://www.galvanize.com/courses/data-science/>`_
 there are two interviews: Python and statistics.  These materials
