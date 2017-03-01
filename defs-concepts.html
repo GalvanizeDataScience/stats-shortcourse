@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Definitions and Concepts &#8212; stats-shortcourse 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="definitions-and-concepts">
+<h1>Definitions and Concepts<a class="headerlink" href="#definitions-and-concepts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sets">
+<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h2>
+<p>The range of all possible outcomes or events, also called the <strong>sample space</strong>.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Coin flips</li>
+<li>Cookies</li>
+<li>Heights</li>
+<li>Number of slices of pizza eaten before 10 am</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="set-operations">
+<h2>Set Operations<a class="headerlink" href="#set-operations" title="Permalink to this headline">¶</a></h2>
+<p>Union: <span class="math">\(A \cup B = \{x: x \in A \vee x\in B\}\)</span></p>
+<p>Intersection: <span class="math">\(A \cap B = \{x: x \in A \wedge x\in B\}\)</span></p>
+<p>Difference: <span class="math">\(A \setminus B = \{x: x \in A \wedge x \notin B\}\)</span></p>
+<p>Complement: <span class="math">\(A^C = \{x: x\notin A\}\)</span></p>
+<p>The null (empty) set: <span class="math">\(\emptyset\)</span></p>
+<div class="section" id="demorgan-s-law">
+<h3>DeMorgan&#8217;s Law<a class="headerlink" href="#demorgan-s-law" title="Permalink to this headline">¶</a></h3>
+<p><span class="math">\(\neg (A \vee B) \iff \neg A \wedge \neg B\)</span></p>
+<p><span class="math">\(\neg (A \wedge B) \iff \neg A \vee \neg B\)</span></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">the <span class="math">\(\vee\)</span> and <span class="math">\(\wedge\)</span> refers to the logical
+<cite>or</cite> and the logical <cite>and</cite>.  Also <span class="math">\(\neg\)</span> is the
+negation logic operator (NOT)</p>
+</div>
+<p>Another useful notation is <span class="math">\(\mathbf{card}(A)\)</span> which is the <em>cardinality</em> or number of elements in <cite>A</cite></p>
+<div class="topic">
+<p class="topic-title first">Sets in Python</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;B&quot;</span><span class="p">,</span><span class="s2">&quot;C&quot;</span><span class="p">,</span><span class="s2">&quot;D&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s2">&quot;C&quot;</span><span class="p">,</span><span class="s2">&quot;D&quot;</span><span class="p">,</span><span class="s2">&quot;E&quot;</span><span class="p">,</span><span class="s2">&quot;F&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;C&quot;</span><span class="p">,</span><span class="s2">&quot;E&quot;</span><span class="p">,</span><span class="s2">&quot;G&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>What is the intersection of the three groups?</li>
+<li>What is the union of the three groups?</li>
+<li>What do we get if we make a union of <cite>a</cite> and <cite>b</cite> then we intersect it with <cite>c</cite></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When we get to NumPy be reminded that <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/routines.set.html">there are set routines in NumPy</a> and they are <strong>fast</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Definitions and Concepts</a><ul>
+<li><a class="reference internal" href="#sets">Sets</a></li>
+<li><a class="reference internal" href="#set-operations">Set Operations</a><ul>
+<li><a class="reference internal" href="#demorgan-s-law">DeMorgan&#8217;s Law</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/defs-concepts.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Galvanize DSI.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/defs-concepts.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
